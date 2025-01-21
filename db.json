@@ -1,0 +1,67 @@
+{
+  "theses": [
+    {
+      "id": "2046",
+      "title": "Test title",
+      "description": "test description"
+    },
+    {
+      "id": "904f",
+      "title": "test2",
+      "description": "test"
+    },
+    {
+      "id": "ae3a",
+      "title": "dad",
+      "description": "dasd"
+    },
+    {
+      "id": "2fbc",
+      "title": "test",
+      "description": "test"
+    },
+    {
+      "id": "39ca",
+      "title": "asdwa",
+      "description": "dawda"
+    }
+  ],
+  "requests": [
+    {
+      "id": "1",
+      "title": "Request for AI Thesis Supervision",
+      "description": "I need guidance on my AI research thesis.",
+      "supervisor": "Dr. John Smith",
+      "status": "approved"
+    },
+    {
+      "id": "2",
+      "title": "test2j",
+      "description": "Test description.",
+      "supervisor": "John Doe",
+      "status": "approved"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "password": "teacher123"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "janesmith@example.com",
+      "password": "teacher456"
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "name": "Rares Amza",
+      "email": "raresamza@gmail.com",
+      "password": "rares123"
+    }
+  ]
+}
