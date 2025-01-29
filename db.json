@@ -1,4 +1,55 @@
 {
+  "notifications": [
+    {
+      "id": "1",
+      "userId": "1",
+      "message": "Your thesis request has been approved by Dr. John Smith.",
+      "read": true,
+      "timestamp": "2024-02-05T10:00:00Z"
+    },
+    {
+      "id": "39c8",
+      "message": "Your thesis request \"test thesis\" has been denied by the teacher.",
+      "read": true,
+      "timestamp": "2025-01-29T15:57:18.148Z"
+    },
+    {
+      "id": "751f",
+      "message": "Your thesis request \"TESt final\" has been approved by John Doe.",
+      "read": true,
+      "timestamp": "2025-01-29T16:49:52.594Z"
+    },
+    {
+      "id": "ab18",
+      "message": "Your thesis request \"xxxxxxxx\" has been approved by John Doe.",
+      "read": false,
+      "timestamp": "2025-01-29T17:18:37.963Z"
+    },
+    {
+      "id": "9198",
+      "message": "Your thesis request \"xxxxxxxx\" has been approved by John Doe.",
+      "read": false,
+      "timestamp": "2025-01-29T17:20:44.260Z"
+    },
+    {
+      "id": "0e9b",
+      "message": "Your thesis request \"xxxxxxxx\" has been approved by John Doe.",
+      "read": false,
+      "timestamp": "2025-01-29T17:28:25.014Z"
+    },
+    {
+      "id": "1743",
+      "message": "Your thesis request \"xxxxxxxx\" has been approved by John Doe.",
+      "read": false,
+      "timestamp": "2025-01-29T17:29:59.360Z"
+    },
+    {
+      "id": "64e5",
+      "message": "Your thesis request \"xxxxxxxx\" has been approved by John Doe.",
+      "read": false,
+      "timestamp": "2025-01-29T17:31:12.847Z"
+    }
+  ],
   "theses": [
     {
       "id": "2046",
@@ -32,6 +83,12 @@
       "title": "Request for AI Thesis Supervision",
       "description": "I need guidance on my AI research thesis.",
       "supervisor": "Dr. John Smith",
+      "comments": [
+        {
+          "text": "dfafwea",
+          "author": "Teacher"
+        }
+      ],
       "status": "approved"
     },
     {
@@ -39,7 +96,27 @@
       "title": "test2j",
       "description": "Test description.",
       "supervisor": "John Doe",
-      "status": "approved"
+      "status": "approved",
+      "comments": []
+    },
+    {
+      "id": "b094",
+      "title": "xxxxxxxx",
+      "description": "xxxxxxxxxx",
+      "teacherId": 1,
+      "status": "approved",
+      "student": "Rares Amza",
+      "supervisor": "John Doe",
+      "comments": [
+        {
+          "text": "ok",
+          "author": "Teacher"
+        },
+        {
+          "text": "bn",
+          "author": "Rares Amza"
+        }
+      ]
     }
   ],
   "teachers": [

@@ -8,6 +8,11 @@ import { toast } from "sonner";
 import { Teacher } from "@/interface/Teacher";
 
 
+interface User {
+  id: number;
+  name: string;
+}
+
 const ProposeThesis: React.FC = () => {
   const [formData, setFormData] = useState<ThesisFormData>({
     title: "",
@@ -15,6 +20,19 @@ const ProposeThesis: React.FC = () => {
     id: null,
   });
   const [teachers, setTeachers] = useState<Teacher[]>([]);
+    const [user, setUser] = useState<User | null>(null);
+  
+
+
+
+
+
+    useEffect(() => {
+      const savedUser = sessionStorage.getItem("user");
+      if (savedUser) {
+        setUser(JSON.parse(savedUser));
+      }
+    }, []);
 
   // Fetch available teachers
   useEffect(() => {
@@ -46,7 +64,7 @@ const ProposeThesis: React.FC = () => {
         description: formData.description,
         teacherId: formData.id,
         status: "pending", // Set the initial status to "pending"
-        student: "Alice Johnson", // Replace with logged-in student's name
+        student: user?.name, // Replace with logged-in student's name
       };
 
       const response = await fetch("http://localhost:3000/requests", {
